@@ -148,7 +148,7 @@ h1, h2, h3, h4, .logo-title {
     color: var(--color-text-muted);
 }
 
-.telegram-link {
+.whatsapp-link {
     display: block;
     margin-top: 0.5rem;
     color: var(--color-blue);
@@ -172,6 +172,43 @@ h1, h2, h3, h4, .logo-title {
 
 .tab-content.active {
     display: block;
+}
+
+.tab-content.active.full-bleed-tab {
+    display: flex;
+}
+
+/* FULL BLEED TABS CONTROLLER (using modern CSS :has selector) */
+.main-content:has(.full-bleed-tab.active) {
+    max-width: none;
+    padding: 0;
+}
+
+/* FULL BLEED TAB (GENIALLY IFRAME) */
+.tab-content.full-bleed-tab {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.tab-content.full-bleed-tab .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.tab-content.full-bleed-tab iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 @keyframes fadeIn {
@@ -369,6 +406,14 @@ h1, h2, h3, h4, .logo-title {
     .main-content {
         margin-left: 0;
         padding: 2rem 1.5rem;
+    }
+    .main-content:has(.full-bleed-tab.active) {
+        padding: 0;
+    }
+    .tab-content.full-bleed-tab {
+        padding: 0;
+        height: 70vh;
+        min-height: 450px;
     }
     .grid-2-cols, .grid-3-cols { grid-template-columns: 1fr; }
 }

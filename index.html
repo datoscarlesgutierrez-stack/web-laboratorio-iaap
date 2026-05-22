@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía: La Colaboración Expandida | IAAP</title>
-    <meta name="description" content="Laboratorio de Herramientas Digitales e IA">
+    <title>Laboratorio de Herramientas Digitales IAAP</title>
+    <meta name="description" content="Laboratorio de Herramientas Digitales e IA 2026">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
@@ -15,12 +15,37 @@
         
         <!-- BARRA LATERAL (TABS) -->
         <aside class="sidebar">
-            <div class="sidebar-header">
-                <div class="logo">
-                    <span class="logo-title">COMUNIDADES</span>
-                    <span class="logo-subtitle">DE PRÁCTICA</span>
+            <div class="sidebar-header" style="padding: 1.5rem 1.25rem;">
+                <div class="logo" style="margin-bottom: 0.75rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" width="100%" height="auto" style="border-radius: var(--border-radius); background: #ffffff; border: 1px solid var(--color-border); padding: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+                        <!-- Graphic symbol in 16:9 layout -->
+                        <g transform="translate(5, 5)">
+                            <!-- Background design grid -->
+                            <circle cx="35" cy="40" r="28" fill="rgba(27, 91, 151, 0.03)" />
+                            <!-- Connection lines -->
+                            <line x1="35" y1="20" x2="35" y2="60" stroke="#cbd5e1" stroke-width="1.5" />
+                            <line x1="15" y1="40" x2="55" y2="40" stroke="#cbd5e1" stroke-width="1.5" />
+                            <line x1="21" y1="26" x2="49" y2="54" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="2,2" />
+                            <line x1="49" y1="26" x2="21" y2="54" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="2,2" />
+                            
+                            <!-- Color Nodes (matching actual palette) -->
+                            <circle cx="35" cy="20" r="6" fill="var(--color-orange)" />
+                            <circle cx="55" cy="40" r="5" fill="var(--color-green)" />
+                            <circle cx="35" cy="60" r="7" fill="var(--color-purple)" />
+                            <circle cx="15" cy="40" r="5" fill="var(--color-pink)" />
+                            <circle cx="35" cy="40" r="8" fill="var(--color-blue)" />
+                            <!-- High-tech styling -->
+                            <circle cx="35" cy="40" r="14" fill="none" stroke="var(--color-blue)" stroke-width="1" opacity="0.3" stroke-dasharray="3,1" />
+                        </g>
+                        
+                        <!-- Typography right-aligned -->
+                        <text x="80" y="32" font-family="'Outfit', sans-serif" font-weight="800" font-size="13" fill="var(--color-blue)">LABORATORIO</text>
+                        <text x="80" y="47" font-family="'Outfit', sans-serif" font-weight="700" font-size="9" fill="var(--color-purple)">HERRAMIENTAS</text>
+                        <text x="80" y="60" font-family="'Outfit', sans-serif" font-weight="700" font-size="9" fill="var(--color-green)">DIGITALES</text>
+                        <text x="80" y="74" font-family="'Outfit', sans-serif" font-weight="800" font-size="11" fill="var(--color-orange)" letter-spacing="1">IAAP 2026</text>
+                    </svg>
                 </div>
-                <div class="sidebar-badge">Laboratorio IA</div>
+                <div class="sidebar-badge" style="background-color: var(--color-purple); font-size: 0.72rem; padding: 0.25rem 0.5rem;">Laboratorio IAAP</div>
             </div>
             
             <nav class="sidebar-nav">
@@ -58,22 +83,34 @@
                         </button>
                     </li>
                     <li class="nav-divider">Memoria</li>
+                    <!--
                     <li>
                         <button class="tab-btn" data-target="tab-6">
                             <span class="icon">🎂</span> 6. 10º Aniversario
                         </button>
                     </li>
+                    -->
                     <li>
                         <button class="tab-btn" data-target="tab-7">
                             <span class="icon">📁</span> 7. Archivo Histórico
                         </button>
                     </li>
+                    <li>
+                        <button class="tab-btn" data-target="tab-8" style="--accent-color: var(--color-blue)">
+                            <span class="icon">🎯</span> 8. Guía del taller y resultados
+                        </button>
+                    </li>
                 </ul>
             </nav>
             
-            <div class="sidebar-footer">
-                <p>IAAP © 2026</p>
-                <a href="#" class="telegram-link">Unirse a Telegram</a>
+            <div class="sidebar-footer" style="padding: 1rem 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="logo-colaborativo.png" alt="100% Colaborativo" style="width: 42px; height: 42px; border-radius: 50%; object-fit: contain; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid var(--color-border); background: #ffffff;">
+                    <div>
+                        <p style="margin: 0; font-size: 0.75rem; color: var(--color-text-muted);">IAAP © 2026</p>
+                        <a href="#" class="whatsapp-link" style="display: block; color: var(--color-blue); text-decoration: none; font-weight: 700; font-size: 0.82rem; margin-top: 2px;">Unirse a WhatsApp</a>
+                    </div>
+                </div>
             </div>
         </aside>
 
@@ -83,7 +120,7 @@
             <!-- Pestaña 0: Inicio -->
             <section id="tab-0" class="tab-content active">
                 <header class="content-header">
-                    <h1>La Colaboración Expandida</h1>
+                    <h1 style="font-size: 3rem; line-height: 1.15; font-weight: 800; background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-purple) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.75rem;">Laboratorio de Herramientas Digitales IAAP</h1>
                     <p class="lead-text">Tecnologías al servicio de las personas, el cuidado y la inteligencia colectiva.</p>
                 </header>
                 
@@ -95,13 +132,20 @@
                     </div>
 
                     <div class="grid-2-cols">
-                        <div class="module-card">
-                            <h3>El Gemelo Digital</h3>
-                            <p>Asistente virtual entrenado con los manuales oficiales de las Comunidades de Práctica. Tu primera línea de soporte para resolver dudas de dinamización.</p>
-                            <button class="action-btn">Consultar IA</button>
+                        <div class="module-card" style="position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div style="filter: blur(4px); opacity: 0.55; pointer-events: none; user-select: none;">
+                                <h3>El Gemelo Digital</h3>
+                                <p>Asistente virtual entrenado con los manuales oficiales de las Comunidades de Práctica. Tu primera línea de soporte para resolver dudas de dinamización.</p>
+                                <button class="action-btn" style="opacity: 0.5;">Consultar IA</button>
+                            </div>
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.65); padding: 1.5rem; text-align: center; backdrop-filter: blur(2px);">
+                                <span style="font-size: 1.6rem; margin-bottom: 0.25rem;">🚀</span>
+                                <h4 style="font-family: 'Outfit', sans-serif; color: var(--color-purple); font-size: 1.1rem; font-weight: 800; margin: 0 0 2px 0;">Próximamente</h4>
+                                <p style="font-size: 0.85rem; color: var(--color-text-main); font-weight: 700; margin: 0;">más novedades</p>
+                            </div>
                         </div>
                         <div class="module-card">
-                            <h3>Comunidad en Telegram</h3>
+                            <h3>Comunidad en WhatsApp</h3>
                             <p>Acompañamiento continuo a través de nuestro "Laboratorio Matriz". Un espacio dividido en General, Oferta y Respuestas.</p>
                             <button class="action-btn">Acceder al Chat</button>
                         </div>
@@ -112,7 +156,7 @@
             <!-- Pestaña 1: Programa de Talleres -->
             <section id="tab-1" class="tab-content">
                 <header class="content-header">
-                    <h1 style="color: var(--color-orange)">Programa de Talleres 2026</h1>
+                    <h1 style="color: var(--color-orange)">Programa de laboratorio de herramientas digitales e IA 2026</h1>
                     <p class="lead-text">Calendario y repositorio de nuestras sesiones sincrónicas.</p>
                 </header>
                 <div class="content-body">
@@ -196,7 +240,7 @@
                     <ul class="resource-list">
                         <li><span>📄</span> <strong>Fase de Diseño:</strong> Prompts para generar matrices estructurales.</li>
                         <li><span>📄</span> <strong>Fase de Lanzamiento:</strong> Ideas para rompehielos y dinámicas de presentación.</li>
-                        <li><span>📄</span> <strong>Mantenimiento:</strong> Cómo resumir largas conversaciones de Telegram.</li>
+                        <li><span>📄</span> <strong>Mantenimiento:</strong> Cómo resumir largas conversaciones de WhatsApp.</li>
                     </ul>
                 </div>
             </section>
@@ -266,6 +310,13 @@
                         <li><a href="#">Materiales del Taller 2023</a></li>
                         <li><a href="#">Guía Gráfica Original</a></li>
                     </ul>
+                </div>
+            </section>
+
+            <!-- Pestaña 8: Guía del taller y resultados -->
+            <section id="tab-8" class="tab-content full-bleed-tab">
+                <div class="iframe-container">
+                    <iframe title="Ciclo COP IAAP 2026" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6a0f44fa74af9b319cc29a03" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
                 </div>
             </section>
 
