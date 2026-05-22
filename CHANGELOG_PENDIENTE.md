@@ -21,3 +21,8 @@ Este archivo contiene el registro detallado de las mejoras y modificaciones real
 - Creación del nuevo módulo interactivo con el Genially embebido mediante `iframe`.
 - Reestructuración adaptativa de `.main-content` y `.tab-content` utilizando el selector moderno `:has()` en CSS para que la pestaña del Genially sea **completamente a pantalla completa (full bleed)** sin interferir con el formato y alineación izquierda del resto de pestañas.
 - Soporte responsive en móviles (`70vh` con un mínimo de `450px`) para garantizar que la presentación no se corte y sea usable en cualquier dispositivo.
+
+---
+
+### [Listo en local] Ocultar "Gemelo Digital" en pestaña Soporte
+- Aplicado el mismo tratamiento visual de "Próximamente" (blur + overlay) a la tarjeta del Gemelo Digital en `content/4-soporte.md`, igualando el estilo ya usado en `content/0-inicio.md`.
