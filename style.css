@@ -426,3 +426,18 @@ h1, h2, h3, h4, .logo-title {
     }
     .grid-2-cols, .grid-3-cols { grid-template-columns: 1fr; }
 }
+
+/* Animación de carga para Markdown */
+.loading-placeholder {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    padding: 1rem 0;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
