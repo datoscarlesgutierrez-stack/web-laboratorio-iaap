@@ -32,15 +32,18 @@
 
 <!-- Modal infografía -->
 <div id="modal-infografia"
-     style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.75); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:1rem;"
+     style="display:none; position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.82); backdrop-filter:blur(6px); align-items:center; justify-content:center; padding:0.75rem;"
      onclick="if(event.target===this)this.style.display='none'">
-    <div style="position:relative; max-width:min(95vw,960px); max-height:90dvh; overflow:auto; border-radius:16px; background:#fff; box-shadow:0 25px 60px rgba(0,0,0,0.4);">
+    <div style="position:relative; width:min(98vw,1280px); max-height:95dvh; overflow-y:auto; border-radius:14px; background:#fff; box-shadow:0 30px 80px rgba(0,0,0,0.5);">
+        <!-- Botón cerrar flotante -->
         <button
             onclick="document.getElementById('modal-infografia').style.display='none'"
-            style="position:sticky; top:0.75rem; left:calc(100% - 3rem); float:right; margin:0.75rem 0.75rem 0 0; background:rgba(0,0,0,0.6); color:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;"
+            style="position:absolute; top:0.6rem; right:0.6rem; z-index:10; background:rgba(0,0,0,0.65); color:#fff; border:none; border-radius:50%; width:38px; height:38px; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(4px); transition:background 0.2s;"
+            onmouseover="this.style.background='rgba(0,0,0,0.9)'"
+            onmouseout="this.style.background='rgba(0,0,0,0.65)'"
             aria-label="Cerrar">✕</button>
         <img src="infografia-resultados-form.png"
              alt="Herramientas digitales e IA: necesidades y apoyos del grupo — síntesis del formulario previo al taller"
-             style="width:100%; height:auto; display:block; border-radius:16px;" />
+             style="width:100%; height:auto; display:block; border-radius:14px;" />
     </div>
 </div>
