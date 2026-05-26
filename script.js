@@ -1,32 +1,77 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
+    const bottomNavBtns = document.querySelectorAll('.bottom-nav-btn');
 
-    // Manejo de cambio de pestañas (Tabs)
+    // ── Hamburger / off-canvas sidebar ──────────────────────────
+    const hamburger   = document.getElementById('hamburger-btn');
+    const sidebar     = document.querySelector('.sidebar');
+    const overlay     = document.getElementById('sidebar-overlay');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        overlay.classList.add('visible');
+        hamburger.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('visible');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+    });
+    overlay.addEventListener('click', closeSidebar);
+
+    // ── Shared tab switcher ──────────────────────────────────────
+    function switchTab(targetId) {
+        // Hide all tabs
+        tabContents.forEach(c => c.classList.remove('active'));
+        // Show target
+        const target = document.getElementById(targetId);
+        if (target) target.classList.add('active');
+
+        // Update sidebar buttons
+        tabBtns.forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-target') === targetId);
+        });
+
+        // Update bottom nav buttons
+        bottomNavBtns.forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-target') === targetId);
+        });
+
+        // Scroll to top on mobile
+        if (window.innerWidth <= 768) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    // ── Wire up sidebar tab buttons ──────────────────────────────
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Eliminar clase active de todos los botones y contenidos
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
-
-            // Añadir clase active al botón clicado
-            btn.classList.add('active');
-
-            // Mostrar el contenido correspondiente
             const targetId = btn.getAttribute('data-target');
-            const targetContent = document.getElementById(targetId);
-            
-            if (targetContent) {
-                targetContent.classList.add('active');
-                // Opcional: hacer scroll suave hacia arriba en móvil
-                if (window.innerWidth <= 768) {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            }
+            switchTab(targetId);
+            // Close sidebar on mobile after selection
+            if (window.innerWidth <= 768) closeSidebar();
         });
     });
 
-    // Cargador dinámico de archivos Markdown (.md)
+    // ── Wire up bottom nav buttons ───────────────────────────────
+    bottomNavBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-target');
+            switchTab(targetId);
+        });
+    });
+
+    // ── Dynamic Markdown loader ──────────────────────────────────
     const loadMarkdownContents = () => {
         const containers = document.querySelectorAll('[data-markdown]');
         containers.forEach(container => {
@@ -41,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     return response.text();
                 })
                 .then(markdown => {
-                    // Renderizar con marked.js (soporta HTML nativo para componentes premium)
                     container.innerHTML = marked.parse(markdown);
                 })
                 .catch(error => {
@@ -57,6 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Iniciar la carga de contenidos al arrancar la web
     loadMarkdownContents();
 });
