@@ -11,10 +11,16 @@
     </div>
 </div>
 
-<h3>Manual de Prompts</h3>
+<h3>Manual de Prompts 2025</h3>
 
-<ul class="resource-list">
-    <li><span>📄</span> <strong>Fase de Diseño:</strong> Prompts para generar matrices estructurales.</li>
-    <li><span>📄</span> <strong>Fase de Lanzamiento:</strong> Ideas para rompehielos y dinámicas de presentación.</li>
-    <li><span>📄</span> <strong>Mantenimiento:</strong> Cómo resumir largas conversaciones de WhatsApp.</li>
-</ul>
+<div class="info-card" style="border-left-color: var(--color-blue);">
+    <p>El manual recoge los <strong>prompts más útiles</strong> para el ciclo de vida de una comunidad de práctica: desde la fase de diseño y lanzamiento hasta el mantenimiento cotidiano. Incluye ejemplos para redactar actas, generar ideas, resumir conversaciones largas de WhatsApp, crear rompehielos y mucho más.</p>
+    <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--color-text-muted);">📌 Este es el manual de referencia del Laboratorio 2025, que se revisará y actualizará al finalizar el taller 2026.</p>
+    <a href="https://docs.google.com/document/d/16-E3GhpKnawtN6FgrJ5-pZSEtVt7kGHndIDDcKVCHSY/edit?usp=drive_link"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="action-btn"
+       style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+        📄 Abrir Manual de Prompts
+    </a>
+</div>
