@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bottomNavBtns = document.querySelectorAll('.bottom-nav-btn');
 
     // ── Hamburger / off-canvas sidebar ──────────────────────────
-    const hamburger   = document.getElementById('hamburger-btn');
-    const sidebar     = document.querySelector('.sidebar');
-    const overlay     = document.getElementById('sidebar-overlay');
+    const hamburger = document.getElementById('hamburger-btn');
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
 
     function openSidebar() {
         sidebar.classList.add('open');

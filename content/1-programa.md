@@ -4,7 +4,23 @@
         <div class="event-details">
             <h3>Sesión 1: Fundamentos Digitales y Cocreación</h3>
             <p>Sesión práctica de 3 horas centrada en la integración de dinámicas colaborativas y herramientas clave (WhatsApp, Google Workspace e IA) como insumos semilla para activar y estructurar las primeras etapas de la comunidad.</p>
-            <span class="badge">Próximamente</span>
+            <div data-show-before="2026-05-28T14:00:00+02:00" data-display="flex" style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                <a href="https://us06web.zoom.us/j/81839135227?pwd=weccp1T8EeaS68AL61EJnXromUefEO.1&jst=3" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #2D8CFF, #1565C0); display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(45, 140, 255, 0.3);">
+                    🎥 Entrar a la Sesión (Zoom)
+                </a>
+                <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: bold; color: #d91a72; background: rgba(217, 26, 114, 0.1); padding: 0.35rem 0.75rem; border-radius: 999px; animation: pulse 1.5s infinite ease-in-out;">
+                    <span style="width: 8px; height: 8px; background-color: #d91a72; border-radius: 50%; display: inline-block;"></span>
+                    ¡EN DIRECTO AHORA!
+                </span>
+            </div>
+            <div data-show-after="2026-05-28T14:00:00+02:00" data-display="flex" style="display: none; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                <span class="badge" style="background-color: var(--color-bg-sidebar); border-color: var(--color-border); color: var(--color-text-muted); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem; border-radius: 8px; margin: 0;">
+                    🔴 Sesión finalizada
+                </span>
+                <span style="font-size: 0.9rem; color: var(--color-text-muted); font-weight: 600;">
+                    El vídeo de la sesión estará disponible próximamente en esta web.
+                </span>
+            </div>
         </div>
     </div>
     <div class="timeline-event">
