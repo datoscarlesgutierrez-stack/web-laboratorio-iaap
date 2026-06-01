@@ -21,6 +21,6 @@
        rel="noopener noreferrer"
        class="action-btn"
        style="margin-top: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-        📄 Abrir Manual de Prompts
+        📄 Manual de usos de IA para las COPS
     </a>
 </div>

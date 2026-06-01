@@ -71,6 +71,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ── Dynamic Scheduling System ────────────────────────────────
+    const applyDynamicScheduling = () => {
+        const now = new Date();
+        document.querySelectorAll('[data-show-before], [data-show-after]').forEach(el => {
+            const showBeforeAttr = el.getAttribute('data-show-before');
+            const showAfterAttr = el.getAttribute('data-show-after');
+            
+            let show = true;
+            
+            if (showBeforeAttr) {
+                const dateLimit = new Date(showBeforeAttr);
+                if (!isNaN(dateLimit.getTime()) && now >= dateLimit) {
+                    show = false;
+                }
+            }
+            
+            if (showAfterAttr) {
+                const dateLimit = new Date(showAfterAttr);
+                if (!isNaN(dateLimit.getTime()) && now < dateLimit) {
+                    show = false;
+                }
+            }
+            
+            if (show) {
+                el.style.display = el.getAttribute('data-display') || 'flex';
+            } else {
+                el.style.display = 'none';
+            }
+        });
+    };
+
     // ── Dynamic Markdown loader ──────────────────────────────────
     const loadMarkdownContents = () => {
         const containers = document.querySelectorAll('[data-markdown]');
@@ -87,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 .then(markdown => {
                     container.innerHTML = marked.parse(markdown);
+                    applyDynamicScheduling();
                 })
                 .catch(error => {
                     console.error('Error cargando markdown:', error);
@@ -102,4 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     loadMarkdownContents();
+    
+    // Check every 5 seconds to ensure live transition at the exact boundary
+    setInterval(applyDynamicScheduling, 5000);
 });
