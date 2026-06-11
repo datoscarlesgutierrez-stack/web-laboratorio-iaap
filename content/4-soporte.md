@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<h3>Manual de Prompts 2025</h3>
+<h3>Manual Inteligencia Artificial al Servicio de tu Comunidad de Práctica IAAP </h3>
 
 <div class="info-card" style="border-left-color: var(--color-blue);">
     <p>El manual recoge los <strong>prompts más útiles</strong> para el ciclo de vida de una comunidad de práctica: desde la fase de diseño y lanzamiento hasta el mantenimiento cotidiano. Incluye ejemplos para redactar actas, generar ideas, resumir conversaciones largas de WhatsApp, crear rompehielos y mucho más.</p>

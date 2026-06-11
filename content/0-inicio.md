@@ -20,6 +20,6 @@
     <div class="module-card">
         <h3>Comunidad en WhatsApp</h3>
         <p>Acompañamiento continuo a través de nuestro "Laboratorio Matriz". Un espacio dividido en General, Oferta y Respuestas.</p>
-        <button class="action-btn">Acceder al Chat</button>
+        <button class="action-btn" onclick="window.open(atob('aHR0cHM6Ly9jaGF0LndoYXRzYXBwLmNvbS9ERnl2emk3WFBnWUlpQjIxRGVqQ0hQP3M9c2gmcD1pJmlscj00JmFtdj0x'), '_blank');">Acceder al Chat</button>
     </div>
 </div>
