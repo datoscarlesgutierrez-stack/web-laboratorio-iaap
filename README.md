@@ -6,13 +6,21 @@ Sitio web del Laboratorio de Herramientas Digitales e IA de las Comunidades de P
 
 ## 🚀 Cómo ejecutar en local
 
+Para poder ver la web en tu propio ordenador y probar los cambios, necesitas iniciar un servidor local. Sigue estos pasos:
+
+1. **Abre la terminal** (o consola de comandos).
+2. Asegúrate de estar **dentro de la carpeta** del proyecto (`WEB Laboratorio IAAP`).
+3. Ejecuta el siguiente comando (requiere tener instalado [Node.js](https://nodejs.org/)):
+
 ```bash
 npx serve
 ```
 
-Abre `http://localhost:3000` en el navegador.
+4. **Abre tu navegador web** y entra en la siguiente dirección:
 
-> Se requiere un servidor local (no `file://`) porque los contenidos se cargan dinámicamente con `fetch()`.
+**[http://localhost:3000](http://localhost:3000)**
+
+> **⚠️ Nota importante**: Es obligatorio usar un servidor local (como `serve`) en lugar de abrir el archivo `index.html` haciendo doble clic. Esto se debe a que la web carga los contenidos dinámicamente desde la carpeta `content/` usando `fetch()`, y los navegadores bloquean esta acción por seguridad si abres el archivo directamente (`file://`).
 
 ---
 

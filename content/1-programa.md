@@ -6,7 +6,7 @@
             <p>Sesión práctica de 3 horas centrada en la integración de dinámicas colaborativas y herramientas clave (WhatsApp, Google Workspace e IA) como insumos semilla para activar y estructurar las primeras etapas de la comunidad.</p>
             <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
                 <a href="https://youtu.be/VpeLp9F1I_M" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #FF0000, #C30000); display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);">
-                    📺 Ver grabación de la sesión (YouTube)
+                    📺 Ver grabación de la sesión 1 (YouTube)
                 </a>
             </div>
         </div>
@@ -16,23 +16,10 @@
         <div class="event-details">
             <h3>Sesión 2: Herramientas de Generación y Curación con IA</h3>
             <p>Sesión de 3 horas centrada en el diseño visual y audiovisual de impacto, y en la profundización de herramientas inteligentes como NotebookLM para la comunidad.</p>
-            <span class="badge" data-show-before="2026-06-11T11:00:00+02:00">Próximamente</span>
-            <div data-show-after="2026-06-11T11:00:00+02:00" data-show-before="2026-06-11T14:00:00+02:00" data-display="flex" style="display: none; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                <a href="https://us06web.zoom.us/j/84827206950?pwd=MFHaI9n00Z7ykOabB7TDOCgaiQ3H8b.1" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #2D8CFF, #1565C0); display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(45, 140, 255, 0.3);">
-                    🎥 Entrar a la Sesión (Zoom)
+            <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                <a href="https://youtu.be/k6ibUXFiaMY?si=91Un1uuZXbb5jGkL" target="_blank" class="action-btn" style="background: linear-gradient(135deg, #FF0000, #C30000); display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.25);">
+                    📺 Ver grabación de la sesión 2 (YouTube)
                 </a>
-                <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: bold; color: #d91a72; background: rgba(217, 26, 114, 0.1); padding: 0.35rem 0.75rem; border-radius: 999px; animation: pulse 1.5s infinite ease-in-out;">
-                    <span style="width: 8px; height: 8px; background-color: #d91a72; border-radius: 50%; display: inline-block;"></span>
-                    ¡EN DIRECTO AHORA!
-                </span>
-            </div>
-            <div data-show-after="2026-06-11T14:00:00+02:00" data-display="flex" style="display: none; align-items: center; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                <span class="badge" style="background-color: var(--color-bg-sidebar); border-color: var(--color-border); color: var(--color-text-muted); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem; border-radius: 8px; margin: 0;">
-                    🔴 Sesión finalizada
-                </span>
-                <span style="font-size: 0.9rem; color: var(--color-text-muted); font-weight: 600;">
-                    El vídeo de la sesión estará disponible próximamente en esta web.
-                </span>
             </div>
         </div>
     </div>
